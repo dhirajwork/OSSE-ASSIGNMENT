@@ -7,6 +7,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
 
@@ -42,6 +43,16 @@ public class HotelReservationController {
         model.addAttribute("resList", reservationService.getReservationsForLoggedUser());
 
         return "your-reservations";
+    }
+
+    // delete reservation
+    @PostMapping("/reservation-delete")
+    public String deleteReservation(@RequestParam("resId") int resId) {
+
+        // delete reservation sent to services to delete from database
+        reservationService.deleteReservation(resId);
+
+        return "redirect:/your-reservations";
     }
 
 }
