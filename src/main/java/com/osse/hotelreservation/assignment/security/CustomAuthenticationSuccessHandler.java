@@ -1,7 +1,7 @@
-package com.devops.hotelreservation.assignment.security;
+package com.osse.hotelreservation.assignment.security;
 
-import com.devops.hotelreservation.assignment.entity.User;
-import com.devops.hotelreservation.assignment.services.UserService;
+import com.osse.hotelreservation.assignment.entity.User;
+import com.osse.hotelreservation.assignment.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;

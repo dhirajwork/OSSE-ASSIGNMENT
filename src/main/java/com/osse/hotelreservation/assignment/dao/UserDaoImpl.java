@@ -1,6 +1,6 @@
-package com.devops.hotelreservation.assignment.dao;
+package com.osse.hotelreservation.assignment.dao;
 
-import com.devops.hotelreservation.assignment.entity.User;
+import com.osse.hotelreservation.assignment.entity.User;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;

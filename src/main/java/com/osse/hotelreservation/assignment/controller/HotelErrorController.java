@@ -1,4 +1,4 @@
-package com.devops.hotelreservation.assignment.controller;
+package com.osse.hotelreservation.assignment.controller;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;

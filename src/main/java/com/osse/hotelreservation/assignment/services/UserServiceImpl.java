@@ -1,10 +1,10 @@
-package com.devops.hotelreservation.assignment.services;
+package com.osse.hotelreservation.assignment.services;
 
-import com.devops.hotelreservation.assignment.entity.Role;
-import com.devops.hotelreservation.assignment.entity.User;
-import com.devops.hotelreservation.assignment.repository.RoleRep;
-import com.devops.hotelreservation.assignment.repository.UserRep;
-import com.devops.hotelreservation.assignment.temp.CurrentUser;
+import com.osse.hotelreservation.assignment.entity.Role;
+import com.osse.hotelreservation.assignment.entity.User;
+import com.osse.hotelreservation.assignment.repository.RoleRep;
+import com.osse.hotelreservation.assignment.repository.UserRep;
+import com.osse.hotelreservation.assignment.temp.CurrentUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

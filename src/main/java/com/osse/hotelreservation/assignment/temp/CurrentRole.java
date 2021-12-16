@@ -1,4 +1,4 @@
-package com.devops.hotelreservation.assignment.temp;
+package com.osse.hotelreservation.assignment.temp;
 
 public class CurrentRole {
 	// unused class

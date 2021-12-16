@@ -1,4 +1,4 @@
-package com.devops.hotelreservation.assignment.exception;
+package com.osse.hotelreservation.assignment.exception;
 
 import java.util.Date;
 

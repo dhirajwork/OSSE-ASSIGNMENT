@@ -1,6 +1,6 @@
-package com.devops.hotelreservation.assignment.dao;
+package com.osse.hotelreservation.assignment.dao;
 
-import com.devops.hotelreservation.assignment.entity.Reservation;
+import com.osse.hotelreservation.assignment.entity.Reservation;
 
 import java.util.Collection;
 

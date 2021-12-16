@@ -1,4 +1,4 @@
-package com.devops.hotelreservation.assignment.security;
+package com.osse.hotelreservation.assignment.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
         import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
         import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-        import com.devops.hotelreservation.assignment.services.UserService;
+        import com.osse.hotelreservation.assignment.services.UserService;
 
 @Configuration
 @EnableWebSecurity
