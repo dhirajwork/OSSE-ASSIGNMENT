@@ -42,4 +42,11 @@ public class ReservationServiceImpl  implements ReservationService{
 
         reservationRepository.save(reservation);
     }
+
+    // delete reservation
+    @Override
+    @Transactional
+    public void deleteReservation(int resId) {
+        reservationRepository.deleteById(resId);
+    }
 }

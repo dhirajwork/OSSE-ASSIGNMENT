@@ -12,4 +12,5 @@ public interface ReservationService {
 
     public void saveOrUpdateReservation(CurrentReservation currentReservation);
 
+    void deleteReservation(int resId);
 }
