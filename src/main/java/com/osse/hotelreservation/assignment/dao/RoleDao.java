@@ -6,5 +6,5 @@ import com.osse.hotelreservation.assignment.entity.Role;
 public interface RoleDao {
 
 	public Role findRoleByName(String roleName);
-	
+
 }

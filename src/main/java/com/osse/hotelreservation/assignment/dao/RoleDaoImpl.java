@@ -10,21 +10,21 @@ import javax.persistence.EntityManager;
 
 @Repository
 public class RoleDaoImpl implements RoleDao {
-	
+
 	// dao pattern to deal with retrieve and send data to and from database for Role
-	
+
 	// field injection entity manager
 	@Autowired
 	private EntityManager entityManager;
 
-	// retrieve role from database 
+	// retrieve role from database
 	@Override
 	public Role findRoleByName(String roleName) {
-		
+
 		// create query with HQL to get role
 		Query<Role> theQuery = currentSession().createQuery("from Role where role_name=:roleName", Role.class);
 		theQuery.setParameter("roleName", roleName);
-		
+
 		// check of valid role and is exist or null
 		Role theRole = null;
 		try {
@@ -32,7 +32,7 @@ public class RoleDaoImpl implements RoleDao {
 		} catch (Exception e) {
 			theRole = null;
 		}
-		
+
 		return theRole;
 	}
 

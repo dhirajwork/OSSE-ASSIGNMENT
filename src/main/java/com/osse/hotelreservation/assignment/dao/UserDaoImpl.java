@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 
 @Repository
 public class UserDaoImpl implements UserDao {
-	
+
 	// dao pattern to deal with retrieve and send data to and from database for user
 
 	// field injection entity manager
@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
 	// get user from database with email
 	@Override
 	public User findUserByEmail(String email) {
-		
+
 		// create query with HQL to get user
 		Query<User> query = currentSession().createQuery("from User where user_email=:uEmail", User.class);
 		query.setParameter("uEmail", email);
@@ -35,11 +35,11 @@ public class UserDaoImpl implements UserDao {
 
 		return user;
 	}
-		
-	// get user from databasr using username 
+
+	// get user from databasr using username
 	@Override
 	public User findUserByUsername(String username) {
-		
+
 		// create query with HQL to get user
 		Query<User> query = currentSession().createQuery("from User where user_username=:uName", User.class);
 		query.setParameter("uName", username);
@@ -54,7 +54,7 @@ public class UserDaoImpl implements UserDao {
 
 		return user;
 	}
-	
+
 	// create user and update if is exist
 	@Override
 	public void saveUser(User theUser) {
