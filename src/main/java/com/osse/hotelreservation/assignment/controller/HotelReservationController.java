@@ -2,12 +2,11 @@ package com.osse.hotelreservation.assignment.controller;
 
 import com.osse.hotelreservation.assignment.services.ReservationService;
 import com.osse.hotelreservation.assignment.temp.CurrentReservation;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 

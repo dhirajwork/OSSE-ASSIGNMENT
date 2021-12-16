@@ -1,6 +1,7 @@
-package com.devops.hotelreservation.assignment.dao;
+package com.osse.hotelreservation.assignment.dao;
 
-import com.devops.hotelreservation.assignment.entity.*;
+import com.osse.hotelreservation.assignment.dao.ReservationDao;
+import com.osse.hotelreservation.assignment.entity.Reservation;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import java.util.Collection;
 
 @Repository
 public class ReservationDaoImpl implements ReservationDao {
-	
+
 	// dao pattern to deal with retrieve and send data to and from database for reservation
 
 	// field injection entity manager
@@ -21,7 +22,7 @@ public class ReservationDaoImpl implements ReservationDao {
 	// retrieve all reservations for logged user from database
 	@Override
 	public Collection<Reservation> getReservationsByUserId(int userId) {
-		
+
 		// create query with HQL to get reservations list
 		Query<Reservation> query = currentSession().createQuery("from Reservation where reservation_user_id=:userId",
 				Reservation.class);
@@ -33,8 +34,8 @@ public class ReservationDaoImpl implements ReservationDao {
 	// retrieve specific reservation by it's id
 	@Override
 	public Reservation getReservationForLoggedUserById(int resId) {
-		
-		// create query with HQL to get reservation 
+
+		// create query with HQL to get reservation
 		Query<Reservation> query = currentSession().createQuery("from Reservation where reservation_id=:resId",
 				Reservation.class);
 		query.setParameter("resId", resId);
