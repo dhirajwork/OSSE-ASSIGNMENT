@@ -1,6 +1,6 @@
-package com.devops.hotelreservation.assignment.repository;
+package com.osse.hotelreservation.assignment.repository;
 
-import com.devops.hotelreservation.assignment.entity.User;
+import com.osse.hotelreservation.assignment.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

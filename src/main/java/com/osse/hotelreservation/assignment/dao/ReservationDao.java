@@ -1,7 +1,7 @@
 package com.osse.hotelreservation.assignment.dao;
 
 import com.osse.hotelreservation.assignment.entity.Reservation;
-import com.osse.hotelreservation.assignment.entity.Reservation;
+
 
 import java.util.Collection;
 
