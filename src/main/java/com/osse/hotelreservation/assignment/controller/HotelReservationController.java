@@ -15,6 +15,21 @@ public class HotelReservationController {
 
     private ReservationService reservationService;
 
+
+    // data binder
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder) {
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
+
+    // home page
+    @RequestMapping("/")
+    public String homePage() {
+
+        return "home-page";
+    }
+
     // booking page
     @GetMapping("/new-reservation")
     public String newReservation(Model model) {
